@@ -1,0 +1,48 @@
+/* Ajustes del carrusel pequeño */
+.carousel-container {
+    display: flex;
+    justify-content: flex-start; /* Alinea el carrusel al lado izquierdo */
+}
+
+.carousel {
+    position: relative;
+    width: 1940px; /* Ancho nativo de las imágenes */
+    height: 750px; /* Alto nativo de las imágenes */
+    overflow: hidden;
+    margin-right: 20px; /* Espacio a la derecha para separar del resto del contenido */
+}
+
+.slides {
+    display: flex;
+    width: 100%; /* 100% por cada imagen, 4 imágenes en total */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 1940px; /* Ancho de la imagen */
+    height: 1080px; /* Alto de la imagen */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0,0,0,0.8);
+}

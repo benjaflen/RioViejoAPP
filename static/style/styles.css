@@ -1,0 +1,76 @@
+/* COLORES INSTITUCIONALES */
+:root {
+    --azul: #0D2234;
+    --naranjo: #F0582E; 
+    --naranjo2: #FF742F;
+}
+
+@font-face {
+    font-family: 'AlbraTextSemi';
+    src: url('static/font/otf/AlbraTextSemi.otf') format('opentype'),
+         url('static/font/woff2/AlbraTextSemi.woff2') format('woff2'),
+         url('static/font/otf/AlbraTextSemi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: AlbraTextSemi;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: var(--naranjo2);
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 40%; /* Tamaño del logo */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1; /* Ocupa todo el espacio disponible en el header */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 20px; /* Aumenta el espacio de los botones */
+    display: block;
+    text-align: center;
+    font-size: 1.1em; /* Ajusta el tamaño de la fuente */
+}
+
+nav ul li a.cta {
+    background-color: #ff5c3d;
+    padding: 15px 20px; /* Aumenta el tamaño del botón de CTA */
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--azul);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
